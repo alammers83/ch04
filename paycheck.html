@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Paycheck Calculator</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- paycheck.html -->
+    <form action="" method="post" id="theForm">
+        <fieldset>
+            <p>Use this form to calculate your paycheck.</p>
+			<div><label for="firstName">First Name</label><input type="text" name="firstName" id="firstName" required></div>
+			<div><label for="lastName">Last Name</label><input type="text" name="lastName" id="lastName" required></div>
+			<div><label for="regHours">Regular Hours Worked (Between 0 and 40)</label><input type="text" name="regHours" id="regHours" value="0.00" required></div>
+			<div><label for="overtimeHours">Overtime Hours Worked (Between 0 and 40) </label><input type="text" name="overtimeHours" id="overtimeHours" value="0.0" required></div>
+			<div><label for="hourlyRate">Hourly Rate (Between 0 and 99.99)</label><input type="text" name="hourlyRate" id="hourlyRate" value="0.00" required></div>
+			<div><label for="regPay">Regular Pay</label><input type="text" name="regPay" id="regPay" value="0.00"></div>
+			<div><label for="overtimePay">Overtime Pay</label><input type="text" name="overtimePay" id="overtimePay" value="0.00"></div>
+			<div><label for="grossPay">Gross Pay</label><input type="text" name="grossPay" id="grossPay" value="0.00"></div>
+			<div><label for="FICA">FICA (%)</label><input type="text" name="FICA" id="FICA" value="0.00" required></div>
+			<div><label for="stateTax">State Tax Rate (%)</label><input type="text" name="stateTax" id="stateTax" value="0.00" required></div>
+			<div><label for="fedTax">Federal Tax Rate (%)</label><input type="text" name="fedTax" id="fedTax" value="0.00" required></div>
+			<div><label for="totalTax">Total Taxes</label><input type="text" name="totalTax" id="totalTax" value="0.00"></div>
+			<div><label for="result">Employee Name</label><input type="text" name="result" id="result"></div>
+			<div><label for="netPay">Net Pay</label><input type="text" name="netPay" id="netPay" value="0.00"></div>
+			<div><input type="submit" value="Calculate" id="submit"></div>
+        </fieldset>
+    </form>
+    <script src="js/paycheck.js"></script>
+</body>
+</html>
